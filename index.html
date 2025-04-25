@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('1ced9c8a0459f9a90f53539394fa5843');
+  function sendLink() {
+    Kakao.Share.sendDefault({
+  objectType: 'list',
+  headerTitle: '#국회의사당',
+  headerLink: {
+    mobileWebUrl: 'http://카카오톡오픈채팅.서버.한국',
+    webUrl: 'http://카카오톡오픈채팅.서버.한국',
+  },
+  contents: [
+    {
+      title: '국회의사당',
+      description: '서울 영등포구 의사당대로 1',
+      imageUrl:
+        'https://media.discordapp.net/attachments/1357658442462003263/1364967457785249833/imaasdsadsdsadge_1.png?ex=680b9881&is=680a4701&hm=f7cb488aa0046f20e7e40e761673311ee6f20fb8dc457afb11e5258087a097e3&=&format=webp&quality=lossless',
+      link: {
+        mobileWebUrl: 'http://카카오톡오픈채팅.서버.한국',
+        webUrl: 'http://카카오톡오픈채팅.서버.한국',
+      },
+    },
+    {
+      title: '국회의사당 국회의원회관',
+      description: '서울 영등포구 의사당대로 1',
+      imageUrl:
+        'https://media.discordapp.net/attachments/1357658442462003263/1364979856089026634/2025-04-25_000138_1.png?ex=680ba40d&is=680a528d&hm=f7ba3d76b0a9c283eb092939171ce4f72183c15ae708f354fb3dbb842f84993d&=&format=webp&quality=lossless',
+      link: {
+        mobileWebUrl: 'http://카카오톡오픈채팅.서버.한국',
+        webUrl: 'http://카카오톡오픈채팅.서버.한국',
+      },
+    },
+    {
+      title: '국회의사당역 9호선',
+      description: '서울 영등포구 국회대로 지하 758',
+      imageUrl:
+        'https://cdn.discordapp.com/attachments/1357658442462003263/1364980515643326484/2025-04-25_000449_1.png?ex=680ba4ab&is=680a532b&hm=fa8e7ed9db7bb2c29b76f0315e264fde026b8d1d58edcefe2b857e700ca1c038&format=webp&quality=lossless',
+      link: {
+        mobileWebUrl: 'http://카카오톡오픈채팅.서버.한국',
+        webUrl: 'http://카카오톡오픈채팅.서버.한국',
+      },
+    },
+  ],
+  buttons: [
+    {
+      title: '검색 결과 더보기',
+      link: {
+        mobileWebUrl: 'http://카카오톡오픈채팅.서버.한국',
+        webUrl: 'http://카카오톡오픈채팅.서버.한국',
+      },
+    },
+    {
+      title: '',
+      link: {
+        mobileWebUrl: 'http://카카오톡오픈채팅.서버.한국',
+        webUrl: 'http://카카오톡오픈채팅.서버.한국',
+    },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+  </body>
+</html>
